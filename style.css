@@ -166,9 +166,9 @@ body {
 }
 
 .blog-img {
-    width: 100%;   
-    /*aspect-ratio: 636 / 320;  /* 關鍵！直接把設計稿的尺寸寫成比例 */
-    /*object-fit: cover;*/
+    width: 100%;
+    aspect-ratio: 636 / 320; /* 設定桌面版的寬矩形比例 */
+    object-fit: cover;         /* 讓圖片填滿這個外框 */
     display: block;
     margin-bottom: 24px;
 }
@@ -339,6 +339,8 @@ a {
     }
 
     .blog-img {
+        /* 在手機上，覆蓋掉桌面版的比例，改用手機版的比例 */
+        aspect-ratio: 351 / 320; 
         margin-bottom: 16px;
     }
 
