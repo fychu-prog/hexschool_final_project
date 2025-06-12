@@ -19,8 +19,19 @@
 
         <div class="phototitle">
             <div class="photo">
-                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog-content/About%20Section.png?raw=true" alt="Title photo">
+              <picture>
+                  <!-- 命令一：如果螢幕寬度小於等於 374px，強制使用這張裁切過的手機圖 -->
+                  <source 
+                      media="(max-width: 374px)" 
+                      srcset="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/mobile/About%20Section.png?raw=true">
+
+                  <!-- 預設選項：在其他所有情況下，使用這張完整的 PC 圖 -->
+                  <img 
+                      src="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/desktop/About%20Section.png?raw=true" 
+                      alt="Title photo">
+              </picture>
             </div>
+
             <div class="right-title">
                 <time class="title-date" datetime="2024-10-21">2024/10/21</time>
                 <div class="title-info">
@@ -43,7 +54,13 @@
             </div>
 
             <div class="section-card">
-                <img class="blog-img" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog-content/content1.png?raw=true" alt="打好基礎前">
+                <img class="blog-img" 
+                srcset="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/mobile/content1.png?raw=true 351w, https://github.com/fychu-prog/hexschool_final_project/blob/main/images/desktop/content1.png?raw=true 993w"
+                sizes="(max-width: 374px), 636px"
+                src="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/desktop/content1.png?raw=true"
+                alt="打好基礎前">
+ 
+    
                 <h2 class="section">打好基礎：HTML、CSS、JavaScript</h2>
                 <h3 class="section-h3">
                     HTML 與語意化
