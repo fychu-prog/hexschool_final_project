@@ -54,11 +54,28 @@
             </div>
 
             <div class="section-card">
-                <img class="blog-img" 
+                <!-- <img class="blog-img" 
                 srcset="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/mobile/content1.png?raw=true 351w, https://github.com/fychu-prog/hexschool_final_project/blob/main/images/desktop/content1.png?raw=true 993w"
                 sizes="(max-width: 374px), 636px"
                 src="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/desktop/content1.png?raw=true"
-                alt="打好基礎前">
+                alt="打好基礎前"> -->
+                <picture>
+                    <!-- 命令一：當螢幕寬度小於 767px 時 -->
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/mobile/content1.png?raw=true"> <!-- 強制載入手機圖 -->
+
+                    <!-- 命令二：在其他所有情況下 -->
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/desktop/content1.png?raw=true"> <!-- 強制載入桌面圖 -->
+                        
+                    <!-- 備用選項：給最老舊的瀏覽器 -->
+                    <img 
+                        class="blog-img" 
+                        src="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/desktop/content1.png?raw=true" 
+                        alt="打好基礎前">
+                </picture>
  
     
                 <h2 class="section">打好基礎：HTML、CSS、JavaScript</h2>
@@ -122,7 +139,25 @@
 
 
             <div class="section-card">
-                <img class="blog-img" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog-content/content2.png?raw=true" alt="擅用主流框架與工具">
+                <picture>
+                    <!-- 命令一：當螢幕寬度小於 767px 時 -->
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/mobile/content2.png?raw=true"> <!-- 強制載入手機圖 -->
+
+                    <!-- 命令二：在其他所有情況下 -->
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/desktop/content2.png?raw=true"> <!-- 強制載入桌面圖 -->
+                        
+                    <!-- 備用選項：給最老舊的瀏覽器 -->
+                    <img 
+                        class="blog-img" 
+                        src="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/desktop/content2.png?raw=true" 
+                        alt="擅用主流框架與工具">
+                </picture>
+
+                <!-- <img class="blog-img" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog-content/content2.png?raw=true" alt="擅用主流框架與工具"> -->
                 <h2 class="section">擅用主流框架與工具</h2>
                 <h3 class="section-h3">
                     React、Vue 先挑一個
@@ -152,7 +187,25 @@
 
 
             <div class="section-card">
-                <img class="blog-img" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog-content/content3.png?raw=true" alt="持續練習與參與社群">
+                <picture>
+                    <!-- 命令一：當螢幕寬度小於 767px 時 -->
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/mobile/content3.png?raw=true"> <!-- 強制載入手機圖 -->
+
+                    <!-- 命令二：在其他所有情況下 -->
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/desktop/content3.png?raw=true"> <!-- 強制載入桌面圖 -->
+                        
+                    <!-- 備用選項：給最老舊的瀏覽器 -->
+                    <img 
+                        class="blog-img" 
+                        src="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/desktop/content3.png?raw=true" 
+                        alt="持續練習與參與社群">
+                </picture>
+
+                <!-- <img class="blog-img" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog-content/content3.png?raw=true" alt="持續練習與參與社群"> -->
                 <h2 class="section">持續練習與參與社群</h2>
                 <h3 class="section-h3">
                     多參加前端挑戰 / Hackathon
@@ -182,9 +235,27 @@
 
 
             <div class="section-card">
-                <img class="blog-img" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog-content/content4.png?raw=true" alt="結語">
+                <picture>
+                    <!-- 命令一：當螢幕寬度小於 767px 時 -->
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/mobile/content4.png?raw=true"> <!-- 強制載入手機圖 -->
+
+                    <!-- 命令二：在其他所有情況下 -->
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/desktop/content4.png?raw=true"> <!-- 強制載入桌面圖 -->
+                        
+                    <!-- 備用選項：給最老舊的瀏覽器 -->
+                    <img 
+                        class="blog-img" 
+                        src="https://github.com/fychu-prog/hexschool_final_project/blob/main/images/desktop/content4.png?raw=true" 
+                        alt="持續練習與參與社群">
+                </picture>
+
+                <!-- <img class="blog-img" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog-content/content4.png?raw=true" alt="結語"> -->
                 <h2 class="section">結語</h2>
-                <p class="blog-paragraph">
+                <p class="blog-paragraph mb24">
                     自學前端可能遇到卡關、挫折，但同時也具備很高的自主性。只要把 基礎、框架、實踐 三大面向做好，就能在前端這條路上穩步前進。若你在學習過程中需要更多建議或想要職涯諮詢，歡迎透過
                     <a href="#">聯絡方式</a>
                     與我聯繫！
