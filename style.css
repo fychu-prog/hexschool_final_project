@@ -93,14 +93,21 @@ body {
 .phototitle{
     border: 1px solid #6C757D;
     display: flex;
+    gap: 24px;
 }
 
 .photo {
-    width: 50%;
+    flex: 1; /* 取代 width: 50%，讓它自動分配空間 */
+}
+
+.photo img {
+    width: 100%;      /* 確保圖片寬度填滿 .photo 容器 */
+    height: 100%;     /* 關鍵！讓圖片高度也填滿 .photo 容器 */
+    object-fit: cover; /* 超級關鍵！圖片會維持比例填滿空間，多餘部分會被裁切，而不是變形 */
 }
 
 .right-title { 
-    width: 50%;
+    flex: 1; /* 取代 width: 50% */
     display: flex;
     flex-direction: column; /* 保持這個，因為 .right-title 的主要內容還是垂直排列 */
     justify-content: center;
@@ -157,8 +164,9 @@ body {
 }
 
 .blog-img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;   
+    /*aspect-ratio: 636 / 320;  /* 關鍵！直接把設計稿的尺寸寫成比例 */
+    /*object-fit: cover;*/
     display: block;
     margin-bottom: 24px;
 }
@@ -225,10 +233,12 @@ a {
 }
 
 .footer-contact {
-    margin: 80px 0;
+    margin: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-top: 1px solid #6C757D;
+    padding-top: 80px;
 }
 
 .social-media {
@@ -262,7 +272,7 @@ a {
     }
 
     .container .navbar {
-        flex-direction: column;
+        flex-direction: row;
         gap: 12px;
         font-size: 20px;
         margin-top: 20px;
