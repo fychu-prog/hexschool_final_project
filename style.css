@@ -123,6 +123,7 @@ body {
 .title-group {
     font-size: 24px;
     color: #0027D5;
+    font-weight: 500;
 }
 
 .right-title .title-newest {
@@ -132,6 +133,7 @@ body {
     border-radius: 40px;
     padding: 6px 12px;
     text-decoration: none;
+    font-weight: 700;
     /*white-space: nowrap; /* 確保文本不換行 */
 }
 
@@ -264,8 +266,8 @@ a {
 
 
 
-/*手機版樣式 (max-width: 374px 覆蓋)*/
-@media (max-width: 374px) {
+/*手機版樣式 (max-width: 767px 覆蓋)*/
+@media (max-width: 767px) {
     .container {
         width: 100%;
         padding: 0 12px;
@@ -280,11 +282,14 @@ a {
     }
 
     .phototitle {
-        flex-direction: column;
-        border: none;
+        flex-direction: column; 
+        align-items: stretch;
+        gap: 16px;                /* 4. 調整間距 */
     }
 
-    .photo {
+    .photo, .right-title {
+        /* 5. 桌面版的 flex:1 在手機上不需要了，讓它恢復預設 */
+        flex: none; 
         width: 100%;
     }
 
